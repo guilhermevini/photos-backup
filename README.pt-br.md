@@ -4,6 +4,8 @@ Ferramenta de código aberto para fazer backup de fotos e vídeos usando a API d
 
 ![License](https://img.shields.io/badge/license-GPLv3-blue)
 ![Python](https://img.shields.io/badge/python-3.13.1-blue)
+![Python Linter](https://github.com/guilhermevini/photos-backup/actions/workflows/python-linter.yml/badge.svg)
+![Docker Compose Validation](https://github.com/guilhermevini/photos-backup/actions/workflows/docker-compose-validation.yml/badge.svg)
 
 - [English](README.en.md)
 

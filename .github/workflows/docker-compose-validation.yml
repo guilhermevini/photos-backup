@@ -1,0 +1,20 @@
+name: Docker Compose Validation
+
+on:
+  push:
+    paths:
+      - "docker-compose.yml"
+  pull_request:
+    paths:
+      - "docker-compose.yml"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Validate Docker Compose
+        run: docker-compose config

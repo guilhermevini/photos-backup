@@ -4,6 +4,8 @@ Open-source tool for backing up photos and videos using the Google Photos API.
 
 ![License](https://img.shields.io/badge/license-GPLv3-blue)
 ![Python](https://img.shields.io/badge/python-3.13.1-blue)
+![Python Linter](https://github.com/guilhermevini/photos-backup/actions/workflows/python-linter.yml/badge.svg)
+![Docker Compose Validation](https://github.com/guilhermevini/photos-backup/actions/workflows/docker-compose-validation.yml/badge.svg)
 
 - [Português (Brasil)](README.pt-br.md)
 
