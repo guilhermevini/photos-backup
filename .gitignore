@@ -1,0 +1,8 @@
+.idea/
+.ruff_cache/
+.venv/
+photos/
+photoview/
+client_secret*
+token.json
+.DS_Store
