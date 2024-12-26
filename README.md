@@ -1,68 +1,70 @@
 # photos-backup
 
-Ferramenta de código aberto para fazer backup de fotos e vídeos usando a API do Google Photos.
+Open-source tool for backing up photos and videos using the Google Photos API.
 
 ![License](https://img.shields.io/badge/license-GPLv3-blue)
 ![Python](https://img.shields.io/badge/python-3.13.1-blue)
 
-## Recursos
+- [Português (Brasil)](README.pt-br.md)
 
-- **Backup organizado:** Fotos e vídeos são baixados e organizados por ano.
-- **Compatibilidade ampla:** Suporte a formatos como `.jpg`, `.heic`, `.mp4`, `.mov`, entre outros.
-- **Interface local:** Utilize o Photoview para visualizar suas fotos em uma interface moderna e responsiva.
-- **Código aberto:** Distribuído sob a licença GPLv3.
+## Features
 
-## Como Rodar o Importador
+- **Organized backups:** Photos and videos are downloaded and organized by year.
+- **Wide compatibility:** Supports formats such as `.jpg`, `.heic`, `.mp4`, `.mov`, and more.
+- **Local interface:** Use Photoview to browse your photos through a modern and responsive UI.
+- **Open source:** Distributed under the GPLv3 license.
 
-Certifique-se de ter o [pyenv](https://github.com/pyenv/pyenv) instalado para gerenciar a versão do Python.
+## How to Run the Importer
+
+Make sure you have [pyenv](https://github.com/pyenv/pyenv) installed to manage your Python version.
 
 ```bash
-# Instale e configure a versão do Python
+# Install and set up Python version
 pyenv install 3.13.1
-pyenv local 3.13.1 # ou use pyenv global 3.13.1
+pyenv local 3.13.1 # or use pyenv global 3.13.1
 
-# Crie o ambiente virtual
+# Create the virtual environment
 python -m venv .venv
 
-# Ative o ambiente virtual
+# Activate the virtual environment
 source .venv/bin/activate # Linux/macOS
 .venv\Scripts\activate    # Windows
 
-# Instale as dependências
+# Install dependencies
 pip install -r requirements.txt
 
-# Execute o script
+# Run the script
 python main.py
 ```
 
-## Como Rodar o Photoview
+## How to Run Photoview
 
-Certifique-se de ter o [Docker](https://www.docker.com/) e o [Docker Compose](https://docs.docker.com/compose/install/) instalados.
+Make sure you have [Docker](https://www.docker.com/) and [Docker Compose](https://docs.docker.com/compose/install/) installed.
 
 ```bash
-# Inicie o Photoview
+# Start Photoview
 make all
 
-# Abra no navegador
+# Open in browser
 open http://localhost:8000/
 ```
 
-## Créditos e Arquivos Reutilizados
+## Credits and Reused Files
 
-Os seguintes arquivos foram diretamente obtidos do repositório oficial do [Photoview](https://github.com/photoview/photoview):
+The following files were directly obtained from the official [Photoview repository](https://github.com/photoview/photoview):
 
 - `.env`
 - `docker-compose.yml`
 - `Makefile`
 
-Esses arquivos foram adaptados para uso neste projeto e mantêm a estrutura original do Photoview. Para mais informações, visite o repositório oficial do Photoview.
+These files have been adapted for use in this project and retain the original structure from Photoview. For more information, visit the official Photoview repository.
 
-## Agradecimentos
+## Acknowledgments
 
-Este projeto foi criado com a ajuda do [ChatGPT](https://openai.com/chatgpt), um modelo de linguagem desenvolvido pela OpenAI. A ferramenta foi utilizada para ajudar na geração de ideias, estruturação do código e documentação do projeto.
+This project was created with the help of [ChatGPT](https://openai.com/chatgpt), a language model developed by OpenAI. The tool was used to assist with idea generation, code structuring, and project documentation.
 
-## Referências
+## References
 
-- [pyenv](https://github.com/pyenv/pyenv) Gerenciador de versões Python.
-- [google-api-python-client](https://github.com/googleapis/google-api-python-client) Cliente Python para APIs do Google.
-- [photoview](https://github.com/photoview/photoview) Galeria de fotos e vídeos com suporte a metadados e IA.
+- [pyenv](https://github.com/pyenv/pyenv): Python version manager.
+- [google-api-python-client](https://github.com/googleapis/google-api-python-client): Python client for Google APIs.
+- [photoview](https://github.com/photoview/photoview): Photo and video gallery with metadata and AI support.
